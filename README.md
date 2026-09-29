@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Inventory Management System — Frontend
 
-## Getting Started
+A modern and responsive web-based **Inventory Management System (IMS)** designed to manage inventory operations, stock movements, warehouse activities, reporting, and audit tracking through a centralized platform.
 
-First, run the development server:
+The frontend provides role-based interfaces for managing items, stock transactions, transfers, receipts, reports, and other inventory operations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
+### 🔐 Authentication & Access Control
+* User authentication
+* JWT-based authentication
+* Role-based access control
+* Role-specific navigation and functionality
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 📦 Item Master Data Management
+* Item management
+* Item Group management
+* Item search and filtering
+* Item information management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📥 Stock Receiving & Initial Stock
+* **GRN (Goods Received Note)** management
+* Record goods received into inventory
+* **Opening Stock** management
+* Maintain initial stock quantities
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔄 Stock Management
+* **Stock Adjustment** for correcting inventory quantities
+* **Stock Transfer** between locations/bins
+* **Stock Transfer Receipt** for receiving transferred stock
+* **Stock Issue** for issuing inventory
+* Track stock movements and transaction history
 
-## Learn More
+### 📊 Reports & Analytics
+* Inventory reports
+* Stock movement reports
+* Transaction-related reports
+* Dashboard analytics
+* Search, filtering, and pagination
 
-To learn more about Next.js, take a look at the following resources:
+### 🔍 Audit
+* Audit trail for inventory activities
+* Track important system operations
+* Maintain transaction history for accountability
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📋 Bin Card
+* View item-wise stock movement
+* Track stock receipts and issues
+* Monitor inventory balance
+* Search bin card information by item
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **REST APIs**
+* **JWT Authentication**
 
-## Deploy on Vercel
+## 🏗️ Main System Modules
+Authentication
+     │
+     ├── Item Master
+     ├── Opening Stock
+     ├── GRN
+     ├── Stock Adjustment
+     ├── Stock Transfer
+     ├── Stock Transfer Receipt
+     ├── Stock Issue
+     │
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+     ├── Bin Card
+     ├── Reports and Audit
+     
+## 🔗 Backend Integration
+The frontend communicates with the Spring Boot backend through RESTful APIs.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The API integration covers:
+
+* Authentication
+* Item Master
+* GRN
+* Opening Stock
+* Stock Adjustment
+* Stock Transfer
+* Stock Transfer Receipt
+* Stock Issue
+* Bin Card
+* Reports
+* Audit
+* Dashboard analytics
+
+## 👨‍💻 Development Team
+Developed by **Bugwarts** as a university Software Project at the **University of Moratuwa — Faculty of Information Technology**.
+
+**Inventory Management System — Bugwarts**
